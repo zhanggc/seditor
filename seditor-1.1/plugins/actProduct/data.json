@@ -1,0 +1,53 @@
+{
+    "status": "success",
+    "count": 240,
+    "page": 1,
+    "max": 20,
+    "proList": [
+        {
+            "id": 2,
+            "name": "商品名称",
+            "shortName": "商品简称",
+            "mprice": 20.01,
+            "lprice": 68.21,
+            "hprice": 68.21,
+            "hlprice": 68.21,
+            "hhprice": 68.21,
+            "remark": "我是备注",
+            "rating": 4,
+            "img": "/201406/201406161422420004294.jpg",
+            "hrefOnPC": "http://item.ingping.com/2.html",
+            "hrefOnMob": "http://m.ingping.com/item-2.html"
+        },
+        {
+            "id": 3,
+            "name": "商品名称",
+            "shortName": "商品简称",
+            "mprice": 1520.01,
+            "lprice": 1568.21,
+            "hprice": 68.21,
+            "hlprice": 68.21,
+            "hhprice": 68.21,
+            "remark": "我是备注",
+            "rating": 5,
+            "img": "/201406/201406161422420004294.jpg",
+            "hrefOnPC": "http://item.ingping.com/3.html",
+            "hrefOnMob": "http://m.ingping.com/item-3.html"
+        },
+        {
+            "id": 5,
+            "name": "商品名称",
+            "shortName": "商品简称",
+            "mprice": 520.01,
+            "lprice": 568.21,
+            "hprice": 68.21,
+            "hlprice": 68.21,
+            "hhprice": 68.21,
+            "remark": "我是备注",
+            "rating": 5,
+            "img": "/201406/201406161422420004294.jpg",
+            "hrefOnPC": "http://item.ingping.com/5.html",
+            "hrefOnMob": "http://m.ingping.com/item-5.html"
+        }
+    ]
+}

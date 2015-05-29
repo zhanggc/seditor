@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../supports/jquery/jquery-1.4.4.js" ></script>
+    <script>
+        window.onload = function (event){
+
+            $('[widget-toggle="link"]').mouseup(function(){
+                console.log("onmouseup");
+                $(this).unbind('mousemove');
+            });
+            $('[widget-toggle="link"]').mousedown(function () {
+                console.log('mousedown');
+                $(this).css('position','absolute');
+                $(this).mousemove(function(event){
+                    console.log('mousemove');
+                    $(this).css('left',event.clientX-100);
+                    $(this).css('top',event.clientY-100);
+                    if(event.preventDefault) event.preventDefault();
+                    else event.returnValue=false;
+                });
+            });
+            $('[widget-toggle="link"]').mouseover(function () {
+                console.log('mouseover');
+            });
+        }
+    </script>
+</head>
+<body style="margin:50px auto;width: 960px;">
+<a widget-toggle="link" data-toggle-a href="http://m.ingping.com/item-3347.html"> <div class="mobi-center"><img data-toggle-img width="640" height="240" alt="屁颠虫MC-091A 安卓版手机专用K歌麦克风" src="http://m.ingping.com/static/images/phoneWap/01.jpg.pagespeed.ce.dHMMs46ZzP.jpg"></div></a>
+
+
+<div style="height:120px"></div>
+
+
+<a widget-toggle="link" data-toggle-a href="http://m.ingping.com/item-3347.html"> <div class="mobi-center"><img data-toggle-img width="640" height="240" alt="屁颠虫MC-091A 安卓版手机专用K歌麦克风" src="http://m.ingping.com/static/images/phoneWap/01.jpg.pagespeed.ce.dHMMs46ZzP.jpg"></div></a>
+</body>
+</html>

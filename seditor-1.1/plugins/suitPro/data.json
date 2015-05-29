@@ -1,0 +1,86 @@
+{
+    "status": "success",
+    "count": 42,
+    "page": 2,
+    "max": 20,
+    "suitList": [
+        {
+            "id": 2,
+            "name": "套装名称",
+            "shortName": "套装简称",
+            "mprice": 155.02,
+            "lprice": 136.42,
+            "cprice": 36.42,
+            "remark": "我是备注",
+            "rating": 4,
+            "img": "/201406/201406161422420004294.jpg",
+            "hrefOnPC": "http://item.ingping.com/2.html",
+            "hrefOnMob": "http://m.ingping.com/item-2.html",
+            "imgs": [
+                "http://img.ingping.com/images/suit/S/201411/201411211550050683938.jpg",
+                "http://img.ingping.com/images/suit/S/201310/201310191612300642504.jpg",
+                "http://img.ingping.com/images/suit/S/20145/201405221538210244605.jpg",
+                "http://img.ingping.com/images/suit/S/20147/201407101514140800777.jpg"
+            ],
+            "pros": [
+                {
+                    "id": 2,
+                    "name": "商品名称",
+                    "shortName": "商品简称",
+                    "mprice": 85.01,
+                    "lprice": 68.21,
+                    "remark": "我是备注",
+                    "rating": 4,
+                    "img": "http://img.ingping.com/images/suit/S/20147/201407101514140800777.jpg",
+                    "hrefOnPC": "http://item.ingping.com/2.html",
+                    "hrefOnMob": "http://m.ingping.com/item-2.html"
+                },
+                {
+                    "id": 3,
+                    "name": "商品名称 2",
+                    "shortName": "商品简 2 称",
+                    "mprice": 70.01,
+                    "lprice": 68.21,
+                    "remark": "我是备注",
+                    "rating": 4,
+                    "img": "http://img.ingping.com/images/suit/S/201310/201310191612300642504.jpg",
+                    "hrefOnPC": "http://item.ingping.com/2.html",
+                    "hrefOnMob": "http://m.ingping.com/item-2.html"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "套装名称 3",
+            "shortName": "套装简称 3",
+            "mprice": 22.01,
+            "lprice": 62.21,
+            "cprice": 12.21,
+            "remark": "我是备注",
+            "rating": 4,
+            "img": "/201406/201406161422420004294.jpg",
+            "hrefOnPC": "http://item.ingping.com/2.html",
+            "hrefOnMob": "http://m.ingping.com/item-2.html",
+            "imgs": [
+                "/201406/201406161422420004294.jpg",
+                "/201406/201406161422420004294.jpg",
+                "/201406/201406161422420004294.jpg\n",
+                "/201406/201406161422420004294.jpg"
+            ],
+            "pros": [
+                {
+                    "id": 2,
+                    "name": "商品名称",
+                    "shortName": "商品简称",
+                    "mprice": 20.01,
+                    "lprice": 68.21,
+                    "remark": "我是备注",
+                    "rating": 4,
+                    "img": "/201406/201406161422420004294.jpg",
+                    "hrefOnPC": "http://item.ingping.com/2.html",
+                    "hrefOnMob": "http://m.ingping.com/item-2.html"
+                }
+            ]
+        }
+    ]
+}

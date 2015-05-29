@@ -1,0 +1,370 @@
+
+
+.sed_container {
+    border: 1px solid #b6b6b6;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    text-decoration: none;
+}
+
+.sed_container *{
+    font-size: 12px;
+    color: black;
+}
+
+
+.sed_top {
+    height: 28px;
+    border-bottom: 1px solid #b6b6b6;
+    padding: 5px 8px 5px 8px;
+    white-space: normal;
+    -moz-box-shadow: 0 1px 0 #fff inset;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
+    box-shadow: 0 1px 0 #fff inset;
+    background: #cfd1cf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#cfd1cf));
+    background-image: -moz-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -o-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: -ms-linear-gradient(top, #f5f5f5, #cfd1cf);
+    background-image: linear-gradient(top, #f5f5f5, #cfd1cf);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#f5f5f5', endColorstr='#cfd1cf');
+}
+
+.sed_top .sed_button {
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 1px solid #a6a6a6;
+    padding: 5px 6px;
+    text-decoration: none;
+    border-bottom-color: #979797;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 0 2px rgba(255, 255, 255, .15) inset, 0 1px 0 rgba(255, 255, 255, .15) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 0 2px rgba(255, 255, 255, .15) inset, 0 1px 0 rgba(255, 255, 255, .15) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 0 2px rgba(255, 255, 255, .15) inset, 0 1px 0 rgba(255, 255, 255, .15) inset;
+    background: #e4e4e4;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e4e4e4));
+    background-image: -moz-linear-gradient(top, #fff, #e4e4e4);
+    background-image: -webkit-linear-gradient(top, #fff, #e4e4e4);
+    background-image: -o-linear-gradient(top, #fff, #e4e4e4);
+}
+
+.sed_top .sed_button:hover {
+    background: #CDCDCD;
+}
+
+.sed_top .sed_button_on {
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .6) inset, 0 1px 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .6) inset, 0 1px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .6) inset, 0 1px 0 rgba(0, 0, 0, .2);
+    background: #b5b5b5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#aaa), to(#cacaca));
+    background-image: -moz-linear-gradient(top, #aaa, #cacaca);
+    background-image: -webkit-linear-gradient(top, #aaa, #cacaca);
+    background-image: -o-linear-gradient(top, #aaa, #cacaca);
+    background-image: -ms-linear-gradient(top, #aaa, #cacaca);
+    background-image: linear-gradient(top, #aaa, #cacaca);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#aaaaaa', endColorstr='#cacaca');
+}
+
+.sed_top .sed_button_name {
+    float: left;
+    display: block;
+    height: 16px;
+    margin-top: 1px;
+    padding-left: 3px;
+}
+
+.sed_top .sed_button_icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.sed_contents {
+}
+
+.sed_contents iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.sed_contents textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    resize: none;
+}
+
+.sed_bottom {
+    height: 20px;
+    padding: 6px 8px 2px;
+    border-top: 1px solid #bfbfbf;
+    -moz-box-shadow: 0 1px 0 #fff inset;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
+    box-shadow: 0 1px 0 #fff inset;
+    background: #cfd1cf;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#cfd1cf));
+    background-image: -moz-linear-gradient(top,#ebebeb,#cfd1cf);
+    background-image: -webkit-linear-gradient(top,#ebebeb,#cfd1cf);
+    background-image: -o-linear-gradient(top,#ebebeb,#cfd1cf);
+    background-image: -ms-linear-gradient(top,#ebebeb,#cfd1cf);
+    background-image: linear-gradient(top,#ebebeb,#cfd1cf);
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#ebebeb',endColorstr='#cfd1cf');
+}
+
+
+
+/*widget css start*/
+
+.widget-dialog-jquert-ui{
+    font-size: 13px;
+}
+.widget-dialog{}
+.widget-holder{
+    position: relative;cursor:pointer;
+}
+.widget-holder span{
+    position: absolute; z-index: 9999; display: block; width: 80px; height: 30px; background: rgb(38, 38, 38); right: 0; top: 0; opacity: 0.9; text-align: center; line-height: 30px; color: rgb(255, 0, 0); font-weight: bold; font-size: 14px; border: 1px solid rgb(172, 172, 172);
+}
+/*widget css end*/
+
+/*widget-sources css start*/
+
+.widget_zoom_fixed{
+    position: fixed;
+    z-index: 888;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.widget_zoom_static{
+    position: static;
+    z-index: 888;
+    width: 0px;
+    height: 0px;
+}
+
+.widget_zoom_container {
+    position: absolute;
+    z-index: 888;
+    left: 0px;
+    top: 0px;
+    background: white;
+}
+
+/*widget-sources css end*/
+
+
+/*widget-image css start*/
+
+.widget-image {
+    margin: 40px 28px;
+}
+.widget-image .album {
+    margin-top: 20px;
+}
+.widget-image .album .container{
+    border: 1px solid rgb(199, 199, 199);
+    padding: 18px 8px;
+}
+.widget-image #imageUpload{
+    float:right;
+}
+.widget-image .album ul{
+    padding: 0;
+    margin: 0;
+}
+
+.widget-image .album ul li{
+    list-style:none;
+}
+.widget-image .album ul li>span{
+    margin-right: 12px;
+    margin-bottom: 12px;
+    float: left;
+    height: 60px;
+}
+.widget-image .album ul li span.del{
+    position: relative;
+    left: 0;
+    top: -62px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: rgb(171, 171, 171);
+    opacity: 0.8;
+    line-height: 60px;
+    cursor: pointer;
+}
+/*widget-image css end*/
+
+
+/*widget-product css start*/
+
+.widget-product *{
+    list-style: none;
+}
+.widget-product .album {
+    margin-top: 20px;
+    display:none;
+}
+.widget-product .album .container{
+    border: 1px solid rgb(199, 199, 199);
+    padding: 18px 8px;
+    background: rgb(241, 242, 243);
+}
+
+.widget-product .album .container .item{
+    padding: 6px;
+    margin: 6px;
+    float: left;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.widget-product .album .item.selected{
+    border: 1px solid rgb(19, 93, 201);
+}
+
+.widget-product .album .item img{
+    width: 128px;
+    height: 128px;
+}
+
+.widget-product .album .item .name{
+    overflow: hidden;
+    width: 128px;
+    height: 16px;
+}
+/*widget-product css end*/
+
+
+
+/*widget-actProduct css start*/
+
+.widget-actProduct *{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.widget-actProduct .tablelist {
+    margin-top: 20px;
+    display:none;
+}
+.widget-actProduct .tablelist tr td{
+    text-align:center;
+}
+.widget-actProduct .tablelist tr td div{
+    line-height: 80px;
+}
+.widget-actProduct .tablelist tr.selected{
+    background: rgb(226, 227, 227);
+}
+
+.widget-actProduct .tablelist tr img{
+    width: 80px;
+    height: 80px;
+}
+
+
+/*widget-actProduct css end*/
+
+/*widget-suit css start*/
+
+.widget-suit *{
+    list-style: none;
+}
+.widget-suit .album {
+    margin-top: 20px;
+    display:none;
+}
+.widget-suit .album .container{
+    border: 1px solid rgb(199, 199, 199);
+    padding: 18px 8px;
+    background: rgb(241, 242, 243);
+}
+
+.widget-suit .album .container .item{
+    padding: 6px;
+    margin: 6px;
+    float: left;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.widget-suit .album .item.selected{
+    border: 1px solid rgb(19, 93, 201);
+}
+
+.widget-suit .album .item img{
+    width: 128px;
+    height: 128px;
+}
+
+.widget-suit .album .item .name{
+    overflow: hidden;
+    width: 128px;
+    height: 16px;
+}
+
+/*widget-suit css end*/
+
+/*widget-suitPro css start*/
+
+.widget-suitPro *{
+    list-style: none;
+}
+.widget-suitPro .album {
+    margin-top: 20px;
+    display:none;
+}
+.widget-suitPro .album .container{
+    border: 1px solid rgb(199, 199, 199);
+    padding: 18px 8px;
+    background: rgb(241, 242, 243);
+}
+
+.widget-suitPro .album .container .item{
+    padding: 6px;
+    margin: 6px;
+    float: left;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.widget-suitPro .album .item.selected{
+    border: 1px solid rgb(19, 93, 201);
+}
+
+.widget-suitPro .album .item img{
+    width: 128px;
+    height: 128px;
+}
+
+.widget-suitPro .album .item .name{
+    overflow: hidden;
+    width: 128px;
+    height: 16px;
+}
+
+/*widget-suitPro css end*/
+
+/*page css start*/
+.page{position: relative;height: 30px;}
+.page ul{position: absolute;right: 10px;}
+.page li{float: left;padding-left: 5px;}
+.page .p{
+    width: 23px;height: 21px;text-align: center;line-height: 21px;font-size: 12px;
+}
+.page .current{color: #999999;display: block;margin-top: 3px;  cursor: text;}
+.page .selectable{color: #0078b6;background-color: #f3f3f3;display: block;margin-top: 3px;}
+.page .next, .page .up{width: 56px;height: 24px;text-align: center;line-height: 24px;font-size: 12px;color: #666666;background:url("../../plugins/product/images/but_1.gif") no-repeat;display: block;}
+.page .next:hover, .page .up:hover {color: #0078b6}
+.page select{margin-top: 4px;border: 1px solid #c4c4c4;}
+/*page css end*/

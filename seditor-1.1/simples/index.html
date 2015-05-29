@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../supports/jquery/jquery-1.4.4.js" ></script>
+    <script type="text/javascript" src="../supports/jquery/ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="../seditor.js"></script>
+
+    <link rel="stylesheet" href="../supports/jquery/ui/jquery-ui.css">
+
+    <script>
+        SEDITOR.setModel('normal');
+        $(function(){
+            SEDITOR.setEditorConfig('seditor0',{
+                height:'520px'
+            });
+        });
+
+    </script>
+</head>
+<body style="margin:50px auto;width: 960px;">
+<div class="seditor" name="seditor0" plugins='sources,link,image,preview,zoom,upload,swapping,product,actProduct,suit,suitPro'></div>
+</body>
+</html>

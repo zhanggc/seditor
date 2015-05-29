@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <script type="text/javascript">
+        (function () {
+            window.SEDITORUTILS || (window.SEDITORUTILS = new function () {
+
+                //外部实例SEditor
+                this.seditor = null;
+
+                //内容元素
+                this.element = {
+                    $:null,
+                    readyState:false
+                };
+
+                //JQuery
+                this.$ = null;
+
+                //内容样式
+                this._styleSheets = {
+                    $elements: [],
+                    paths: []
+                };
+
+                //内容脚本
+                this._scripts = {
+                    $elements: [],
+                    paths: []
+                };
+
+
+
+                //初始化
+                this.init = function () {
+                    this.$ = $;
+                    this.element.$ = $('<div class="content"></div>');
+
+                    //插入
+                    $('body').append(this.element.$);
+
+                };
+
+                //插入脚本
+                //paths 脚本路径或一组脚本路径
+                this.scripts = function (paths) {
+                    this.removeScripts();
+
+                    var $tag;
+                    if (Object.prototype.toString.call(paths) === '[object Array]') {
+                        $(paths).each(function () {
+                            $tag = $('<script type="text/javascript" src="' + this + '" />');
+                            SEDITORUTILS._scripts.$elements.push($tag);
+                            SEDITORUTILS._scripts.paths.push(this);
+                            $('head').append($tag);
+                        });
+                    } else if (typeof paths == "string") {
+                        $tag = $('<script type="text/javascript" src="' + paths + '" />');
+                        SEDITORUTILS._scripts.$elements.push($tag);
+                        SEDITORUTILS._scripts.paths.push(paths);
+                        $('head').append($tag);
+                    }
+                };
+
+                //插入样式,
+                //paths 样式路径或一组脚本路径
+                this.styleSheets = function (paths) {
+                    this.removeStyleSheets();
+
+                    var $tag;
+                    if (Object.prototype.toString.call(paths) === '[object Array]') {
+                        $(paths).each(function () {
+                            $tag = $('<link href="' + this + '" rel="stylesheet" type="text/css">');
+                            SEDITORUTILS._styleSheets.$elements.push($tag);
+                            SEDITORUTILS._styleSheets.paths.push(this);
+                            $('head').append($tag);
+                        });
+                    } else if (typeof paths == "string") {
+                        $tag = $('<link href="' + paths + '" rel="stylesheet" type="text/css">');
+                        SEDITORUTILS._styleSheets.$elements.push($tag);
+                        SEDITORUTILS._styleSheets.paths.push(paths);
+                        $('head').append($tag);
+                    }
+                };
+
+                //移除样式
+                this.removeStyleSheets = function () {
+                    $(SEDITORUTILS._styleSheets.$elements).each(function () {
+                        this.remove();
+                    });
+                    SEDITORUTILS._styleSheets.$elements = [];
+                }
+
+                //移除脚本
+                this.removeScripts = function () {
+                    $(SEDITORUTILS._scripts.$elements).each(function () {
+                        this.remove();
+                    });
+                    SEDITORUTILS._scripts.$elements = [];
+                }
+
+            }());
+
+
+
+            (function () {
+                //尝试获取$
+                if (typeof($) == 'undefined') {
+                    //设置钩子
+                    var handleId = setInterval(function () {
+                        if (typeof($) != 'undefined') {
+                            $(function () {
+                                SEDITORUTILS.init();
+                                SEDITORUTILS.seditor = parent.window.SEDITOR.shakeHands(window);
+                                if (SEDITORUTILS.seditor == null) {
+                                    var handleId = setInterval(function () {
+                                        console.log('setInterval 1');
+                                        SEDITORUTILS.seditor = parent.window.SEDITOR.shakeHands(window);
+                                        if (SEDITORUTILS.seditor != null) {
+                                            clearInterval(handleId);
+                                        }
+                                    }, 100);
+                                }
+                            });
+
+                            //清除钩子
+                            clearInterval(handleId);
+                        }
+                    }, 100);
+                } else {
+                    $(function () {
+                        SEDITORUTILS.init();
+                        SEDITORUTILS.seditor = parent.window.SEDITOR.shakeHands(window);
+                        if (SEDITORUTILS.seditor == null) {
+                            var handleId = setInterval(function () {
+                                SEDITORUTILS.seditor = parent.window.SEDITOR.shakeHands(window);
+                                if (SEDITORUTILS.seditor != null) {
+                                    clearInterval(handleId);
+                                }
+                            }, 100);
+                        }
+                    });
+                }
+            })();
+        })();
+    </script>
+</head>
+<body>
+</body>
+</html>
